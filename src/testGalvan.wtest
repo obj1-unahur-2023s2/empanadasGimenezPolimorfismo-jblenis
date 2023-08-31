@@ -1,0 +1,18 @@
+import empleados.*
+
+describe "Test sobre las finanzas de Galvan"{
+	
+	
+	method estaSinDeuda() {
+		return galvan.totalDeuda() == 0
+	}
+	
+	test "Galvan arranca con deuda cero"{
+		assert.equals(0, galvan.totalDeuda())
+	}
+	
+	test "Galvan No tiene deuda"{
+		assert.that(self.estaSinDeuda())
+	}
+}
+
